@@ -1,0 +1,39 @@
+<%= render 'layouts/nav' %>
+<%= render 'home/menu' %>
+<div class="header">Select Service</div>
+<div class="box-container">
+  <div class="box-container__single-container">
+    <div class="box-container__single-container__header">Invite via Email</div>
+    <div class="box-container__single-container__email__text-box">
+      <%= text_area_tag :email_addresses, 'Enter Email Addresses', size: "30X55" %>
+    </div>
+    <div class="box-container__single-container__button">
+      <%= link_to 'Add Friends', friends_path, class: 'link--white' %>
+    </div>
+  </div>
+  <div class="box-container__single-container">
+    <div class="box-container__single-container__header">Import Friends List from File</div>
+    <p class="box-container__single-container__paragraph-text">
+      blah blah blah blah blah blah blah blah blah blah blah blah blah
+      blah blah blah blah blah blah blah blah blah blah blah blah blah
+      blah blah blah blah blah blah blah blah blah blah blah blah blah
+    </p>
+    Insert image thing here
+    <p class="box-container__single-container__paragraph-text--bold">Save or export your file as a .csv, etc</p>
+    <div class="box-container__single-container__button">
+      <%= link_to 'Upload File', files_path, class: 'link--white' %>
+    </div>
+  </div>
+  <div class="box-container__single-container">
+    <div class="box-container__single-container__header">Link</div>
+    <div class="box-container__single-container__link">http://domain.com/link</div>
+    <p>Allow for new users to invite others</p>
+    <div class="box-container__single-container__toggle-button">
+      <input type="radio" id="toggle-on" name="toggle" checked>
+        <label for="toggle-on">Yes</label>
+      <input type="radio" id="toggle-off" name="toggle">
+        <label for="toggle-off">No</label>
+    </div>
+  </div>
+</div>
+

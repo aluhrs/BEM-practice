@@ -1,0 +1,29 @@
+<%= render 'layouts/nav' %>
+<div>Select Service</div>
+<div class="box-container">
+  <div class="box-container__single-container">
+    <div class="header">Invite via Email</div>
+    <div class="email__text-box"></div>
+    <div class="button">
+      <%= link_to 'Add Friends', friends_path %>
+    </div>
+  </div>
+  <div class="box-container__single-container">
+    <div class="header">Import Friends List from File</div>
+    <p class="paragraph-text">Format your blah blah blah</p>
+    Insert image thing here
+    <p class="paragraph-text--bold">Save or export your file as a .csv, etc</p>
+    <div class="button">
+      <%= link_to 'Upload File', upload_file_path %>
+    </div>
+  </div>
+  <div class="box-container__single-container">
+    <div class="header">Link</div>
+    <div class="link">http://domain.com/link</div>
+    <p>Allow for new users to invite others</p>
+    <div class="toggle-button">
+      Yes/No
+    </div>
+  </div>
+</div>
+
